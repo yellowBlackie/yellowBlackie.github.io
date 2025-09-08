@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+}
+
+.block {
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc; /* Для наглядності, можна видалити */
+}
+
+/* Кольори та розміри для варіанту 2 */
+.block1 {
+    background-color: #ADD8E6;
+    flex: 1 1 100%;
+}
+/* Блакитний топ */
+.block2 {
+    background-color: #90EE90;
+    flex: 1 1 20%;
+}
+/* Зелений лівий */
+.block3 {
+    background-color: #FFFFFF;
+    flex: 1 1 60%;
+}
+/* Білий центр */
+.block4 {
+    background-color: #90EE90;
+    flex: 1 1 20%;
+}
+/* Зелений правий верх */
+.block5 {
+    background-color: #FFDAB9;
+    flex: 1 1 20%;
+}
+/* Персиковий правий низ */
+.block6 {
+    background-color: #ADD8E6;
+    flex: 1 1 100%;
+}
+/* Блакитний боттом */
+
+/* Порядок блоків */
+.block1 {
+    order: 1;
+}
+
+.block2 {
+    order: 2;
+}
+
+.block3 {
+    order: 3;
+}
+
+.block4 {
+    order: 4;
+}
+
+.block5 {
+    order: 5;
+}
+
+.block6 {
+    order: 6;
+}
+
+/* Стилі для меню */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .block {
+        flex: 1 1 100%;
+    }
+}
