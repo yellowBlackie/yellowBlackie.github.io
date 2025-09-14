@@ -8,7 +8,7 @@ body {
     "two three five five"
     "two six six six";
   grid-template-columns: 1fr 2fr 1fr 1fr;
-  grid-template-rows: auto 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 2fr 1fr 1fr;
   gap: 15px;
   min-height: 100vh;
   background: #f0f0f0;
@@ -78,4 +78,13 @@ nav a {
   background: #cfe2f3;
   border: 2px solid black;
   padding: 10px;
+}
+
+footer {
+  grid-area: footer;
+  background: #3d5afe;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border: 2px solid black;
 }
