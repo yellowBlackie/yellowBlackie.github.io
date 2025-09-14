@@ -1,6 +1,11 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background: #f0f0f0;
+}
+
+.container {
   display: grid;
   grid-template-areas:
     "header header header header"
@@ -9,11 +14,12 @@ body {
     "two six six six"
     "footer footer footer footer";
   grid-template-columns: 1fr 2fr 1fr 1fr;
-  grid-template-rows: auto minmax(100px, auto) minmax(100px, auto) auto auto;
-  gap: 10px; /* Зменшено проміжок */
-  min-height: 100vh;
-  background: #f0f0f0;
+  grid-template-rows: auto 1fr 1fr auto auto;
+  gap: 15px;
+  max-width: 1200px; /* Обмеження максимальної ширини */
+  margin: 0 auto; /* Центрування контейнера */
   border: 1px solid black;
+  padding: 0 15px; /* Додавання відступів по боках */
 }
 
 .combined-header {
@@ -29,7 +35,7 @@ body {
 .site-title {
   margin: 0;
   color: #003366;
-  font-size: 1.6em;
+  font-size: 2em;
 }
 
 nav ul {
@@ -37,7 +43,7 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 12px;
+  gap: 15px;
 }
 
 nav a {
@@ -50,35 +56,35 @@ nav a {
   grid-area: two;
   background: #d9ead3;
   border: 2px solid black;
-  padding: 8px;
+  padding: 10px;
 }
 
 .three {
   grid-area: three;
   background: #ffffff;
   border: 2px solid black;
-  padding: 8px;
+  padding: 10px;
 }
 
 .four {
   grid-area: four;
   background: #ffe599;
   border: 2px solid black;
-  padding: 8px;
+  padding: 10px;
 }
 
 .five {
   grid-area: five;
   background: #fce5cd;
   border: 2px solid black;
-  padding: 8px;
+  padding: 10px;
 }
 
 .six {
   grid-area: six;
   background: #cfe2f3;
   border: 2px solid black;
-  padding: 8px;
+  padding: 10px;
 }
 
 footer {
@@ -86,6 +92,6 @@ footer {
   background: #3d5afe;
   color: white;
   text-align: center;
-  padding: 12px;
+  padding: 15px;
   border: 2px solid black;
 }
