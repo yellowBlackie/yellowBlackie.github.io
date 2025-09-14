@@ -10,20 +10,22 @@ body {
     "footer footer footer footer";
   grid-template-columns: 1fr 2fr 1fr 1fr;
   grid-template-rows: auto 1fr 1fr auto auto;
-  gap: 15px;
+  gap: 20px;
   min-height: 100vh;
-  background: #f0f0f0;
-  border: 1px solid black;
+  background: #f0f2f5;
+  padding: 20px;
 }
 
+/* Верхній блок */
 .combined-header {
   grid-area: header;
   background: #cce0ff;
-  border: 2px solid black;
-  padding: 10px;
+  padding: 15px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 .site-title {
@@ -32,6 +34,7 @@ body {
   font-size: 2em;
 }
 
+/* Меню */
 nav ul {
   list-style: none;
   padding: 0;
@@ -42,50 +45,38 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #003366;
+  color: white;
+  background: #3d5afe;
+  padding: 8px 14px;
+  border-radius: 6px;
   font-weight: bold;
+  transition: 0.3s;
 }
 
-.two {
-  grid-area: two;
-  background: #d9ead3;
-  border: 2px solid black;
-  padding: 10px;
+nav a:hover {
+  background: #2c3ebd;
 }
 
-.three {
-  grid-area: three;
-  background: #ffffff;
-  border: 2px solid black;
-  padding: 10px;
+/* Контентні блоки */
+.two, .three, .four, .five, .six {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-.four {
-  grid-area: four;
-  background: #ffe599;
-  border: 2px solid black;
-  padding: 10px;
-}
+.two   { grid-area: two;   background: #d9ead3; }
+.three { grid-area: three; background: #ffffff; }
+.four  { grid-area: four;  background: #ffe599; }
+.five  { grid-area: five;  background: #fce5cd; }
+.six   { grid-area: six;   background: #cfe2f3; }
 
-.five {
-  grid-area: five;
-  background: #fce5cd;
-  border: 2px solid black;
-  padding: 10px;
-}
-
-.six {
-  grid-area: six;
-  background: #cfe2f3;
-  border: 2px solid black;
-  padding: 10px;
-}
-
+/* Низ */
 footer {
   grid-area: footer;
   background: #3d5afe;
   color: white;
   text-align: center;
   padding: 15px;
-  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.15);
 }
