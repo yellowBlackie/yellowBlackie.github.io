@@ -6,9 +6,10 @@ body {
     "header header header header"
     "two three four four"
     "two three five five"
-    "two six six six";
+    "two six six six"
+    "footer footer footer footer";
   grid-template-columns: 1fr 2fr 1fr 1fr;
-  grid-template-rows: 0.5fr 2fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr auto;
   gap: 15px;
   min-height: 100vh;
   background: #f0f0f0;
