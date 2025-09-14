@@ -9,7 +9,7 @@ body {
     "two six six six"
     "footer footer footer footer";
   grid-template-columns: 1fr 2fr 1fr 1fr;
-  grid-template-rows: minmax(100px, auto) 1fr 1fr minmax(100px, auto) minmax(100px, auto);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 15px;
   min-height: 100vh;
   background: #f0f0f0;
