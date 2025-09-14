@@ -24,6 +24,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 200px; /* Встановлюємо таку ж висоту, як у блоків 4 і 5 */
 }
 
 .site-title {
@@ -65,6 +66,7 @@ nav a {
   background: #ffe599;
   border: 2px solid black;
   padding: 10px;
+  min-height: 200px;
 }
 
 .five {
@@ -72,6 +74,7 @@ nav a {
   background: #fce5cd;
   border: 2px solid black;
   padding: 10px;
+  min-height: 200px;
 }
 
 .six {
@@ -79,6 +82,7 @@ nav a {
   background: #cfe2f3;
   border: 2px solid black;
   padding: 10px;
+  min-height: 200px; /* Встановлюємо таку ж висоту, як у блоків 4 і 5 */
 }
 
 footer {
@@ -88,18 +92,4 @@ footer {
   text-align: center;
   padding: 15px;
   border: 2px solid black;
-}
-
-.four,
-.five,
-.six {
-  min-height: 200px; 
-}
-
-.combined-header {
-  height: 100px; 
-}
-
-footer {
-  height: 100px; /* Set a specific height for the footer */
 }
