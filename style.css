@@ -9,7 +9,7 @@ body {
     "six six six six"
     "footer footer footer footer";
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto 1fr 1fr auto auto;
+  grid-template-rows: 150px 1fr 1fr auto auto; 
   gap: 15px;
   min-height: 100vh;
   background: #f0f0f0;
@@ -24,6 +24,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 150px; 
 }
 
 .site-title {
@@ -51,7 +52,7 @@ nav a {
   background: #d9ead3;
   border: 2px solid black;
   padding: 10px;
-  width: 200px; /* Set a fixed width for block 2 */
+  width: 200px;
 }
 
 .three {
@@ -66,7 +67,7 @@ nav a {
   background: #ffe599;
   border: 2px solid black;
   padding: 10px;
-  width: 200px; /* Match width with block 2 */
+  width: 200px;
 }
 
 .five {
@@ -74,7 +75,7 @@ nav a {
   background: #fce5cd;
   border: 2px solid black;
   padding: 10px;
-  width: 200px; /* Match width with block 2 */
+  width: 200px;
 }
 
 .six {
@@ -82,7 +83,7 @@ nav a {
   background: #cfe2f3;
   border: 2px solid black;
   padding: 10px;
-  height: 100px; /* Set a fixed height for block 6 */
+  height: 150px; 
 }
 
 footer {
@@ -92,8 +93,4 @@ footer {
   text-align: center;
   padding: 15px;
   border: 2px solid black;
-}
-
-.combined-header {
-  height: 100px; /* Match height with block 6 */
 }
