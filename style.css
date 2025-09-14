@@ -9,7 +9,7 @@ body {
     "two six six six"
     "footer footer footer footer";
   grid-template-columns: 1fr 2fr 1fr 1fr;
-  grid-template-rows: auto 1fr 1fr auto auto;
+  grid-template-rows: minmax(100px, auto) minmax(200px, auto) minmax(200px, auto) minmax(100px, auto) minmax(100px, auto);
   gap: 15px;
   min-height: 100vh;
   background: #f0f0f0;
@@ -29,7 +29,7 @@ body {
 .site-title {
   margin: 0;
   color: #003366;
-  font-size: 1.6em; /* Зменшення розміру шрифту */
+  font-size: 2em;
 }
 
 nav ul {
@@ -37,7 +37,7 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 12px; /* Зменшення проміжків */
+  gap: 15px;
 }
 
 nav a {
@@ -50,35 +50,35 @@ nav a {
   grid-area: two;
   background: #d9ead3;
   border: 2px solid black;
-  padding: 8px; /* Зменшення внутрішнього відступу */
+  padding: 10px;
 }
 
 .three {
   grid-area: three;
   background: #ffffff;
   border: 2px solid black;
-  padding: 8px; /* Зменшення внутрішнього відступу */
+  padding: 10px;
 }
 
 .four {
   grid-area: four;
   background: #ffe599;
   border: 2px solid black;
-  padding: 8px; /* Зменшення внутрішнього відступу */
+  padding: 10px;
 }
 
 .five {
   grid-area: five;
   background: #fce5cd;
   border: 2px solid black;
-  padding: 8px; /* Зменшення внутрішнього відступу */
+  padding: 10px;
 }
 
 .six {
   grid-area: six;
   background: #cfe2f3;
   border: 2px solid black;
-  padding: 8px; /* Зменшення внутрішнього відступу */
+  padding: 10px;
 }
 
 footer {
@@ -86,20 +86,6 @@ footer {
   background: #3d5afe;
   color: white;
   text-align: center;
-  padding: 12px; /* Зменшення внутрішнього відступу */
+  padding: 15px;
   border: 2px solid black;
-}
-
-.four,
-.five,
-.six {
-  min-height: 160px; /* Зменшення мінімальної висоти */
-}
-
-.combined-header {
-  height: 80px; /* Зменшення фіксованої висоти */
-}
-
-footer {
-  height: 80px; /* Зменшення фіксованої висоти */
 }
