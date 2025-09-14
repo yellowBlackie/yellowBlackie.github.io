@@ -11,15 +11,14 @@ body {
     "header header header header"
     "two three three four"
     "two three three five"
-    "two six six six"
+    "two three three six"
     "footer footer footer footer";
   grid-template-columns: 1fr 2fr 1fr 1fr;
-  grid-template-rows: auto 1fr 1fr auto auto;
+  grid-template-rows: minmax(100px, auto) 1fr 1fr 1fr minmax(100px, auto);
   gap: 15px;
-  max-width: 1200px; /* Обмеження максимальної ширини */
-  margin: 0 auto; /* Центрування контейнера */
+  max-width: 1200px;
+  margin: 0 auto;
   border: 1px solid black;
-  padding: 0 15px; /* Додавання відступів по боках */
 }
 
 .combined-header {
