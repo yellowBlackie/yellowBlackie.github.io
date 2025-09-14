@@ -16,34 +16,20 @@ body {
   border: 1px solid black;
 }
 
-.combined-header {
+header {
   grid-area: header;
   background: #cce0ff;
   border: 2px solid black;
   padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.site-title {
-  margin: 0;
-  color: #003366;
-  font-size: 2em;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 15px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #003366;
-  font-weight: bold;
+footer {
+  grid-area: footer;
+  background: #3d5afe;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border: 2px solid black;
 }
 
 .two {
@@ -81,11 +67,53 @@ nav a {
   padding: 10px;
 }
 
-footer {
-  grid-area: footer;
-  background: #3d5afe;
-  color: white;
-  text-align: center;
-  padding: 15px;
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+}
+
+/* Виправлення для симетрії */
+.combined-header {
+  grid-area: header;
+  background: #cce0ff;
   border: 2px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  margin: 0;
+  color: #003366;
+  font-size: 2em;
+}
+
+/* Нові стилі для симетричного макета */
+body {
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr auto;
+}
+
+.two {
+  /* ... інші стилі ... */
+  grid-area: two;
+}
+
+.four {
+  /* ... інші стилі ... */
+  grid-area: four;
+}
+.five {
+  /* ... інші стилі ... */
+  grid-area: five;
 }
