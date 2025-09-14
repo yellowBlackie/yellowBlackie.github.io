@@ -1,5 +1,9 @@
-body {
+html, body {
+  height: 100%;
   margin: 0;
+}
+
+body {
   font-family: Arial, sans-serif;
   display: grid;
   grid-template-areas:
@@ -89,3 +93,4 @@ footer {
   padding: 15px;
   border: 2px solid black;
 }
+
