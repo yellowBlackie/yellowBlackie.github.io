@@ -4,39 +4,46 @@ body {
   display: grid;
   grid-template-areas:
     "header header header header"
-    "one one one one"
     "two three four four"
     "two three five five"
     "two six six six"
     "footer footer footer footer";
   grid-template-columns: 1fr 2fr 1fr 1fr;
-  grid-template-rows: auto auto 1fr 1fr 1fr auto; /* Змінено розміри рядків для гнучкості */
-  gap: 15px; /* Збільшено відступи між блоками для кращої візуалізації */
+  grid-template-rows: auto 1fr 1fr 1fr auto;
+  gap: 15px;
   min-height: 100vh;
   background: #f0f0f0;
+  border: 1px solid black;
 }
 
-header {
+.combined-header {
   grid-area: header;
-  background: #3d5afe;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-footer {
-  grid-area: footer;
-  background: #3d5afe;
-  color: white;
-  text-align: center;
-  padding: 15px;
-}
-
-.one {
-  grid-area: one;
   background: #cce0ff;
   border: 2px solid black;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  margin: 0;
+  color: #003366;
+  font-size: 2em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
 }
 
 .two {
@@ -74,16 +81,11 @@ footer {
   padding: 10px;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 15px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #003366;
-  font-weight: bold;
+footer {
+  grid-area: footer;
+  background: #3d5afe;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border: 2px solid black;
 }
