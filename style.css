@@ -8,7 +8,7 @@ body {
     "two three three five"
     "two six six six"
     "footer footer footer footer";
-  grid-template-columns: 1fr 2fr 2fr 1fr; /* Wider block 1 and 6 */
+  grid-template-columns: 1fr 2fr 1fr 1fr;
   grid-template-rows: auto 1fr 1fr 1fr auto;
   gap: 15px;
   min-height: 100vh;
@@ -51,7 +51,6 @@ nav a {
   background: #d9ead3;
   border: 2px solid black;
   padding: 10px;
-  height: 100%; /* Extends to the bottom */
 }
 
 .three {
@@ -66,7 +65,6 @@ nav a {
   background: #ffe599;
   border: 2px solid black;
   padding: 10px;
-  width: 200px;
 }
 
 .five {
@@ -74,7 +72,6 @@ nav a {
   background: #fce5cd;
   border: 2px solid black;
   padding: 10px;
-  width: 200px;
 }
 
 .six {
