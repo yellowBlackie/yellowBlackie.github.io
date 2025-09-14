@@ -6,7 +6,7 @@ body {
     "header header header header"
     "two three three four"
     "two three three five"
-    "six six six six"
+    "two six six six"
     "footer footer footer footer";
   grid-template-columns: 1fr 2fr 2fr 1fr;
   grid-template-rows: auto 1fr 1fr auto auto;
@@ -14,7 +14,6 @@ body {
   min-height: 100vh;
   background: #f0f0f0;
   border: 1px solid black;
-  position: relative;
 }
 
 .combined-header {
@@ -52,12 +51,7 @@ nav a {
   background: #d9ead3;
   border: 2px solid black;
   padding: 10px;
-  height: 100%; /* Extends to cover the height */
-  position: absolute;
-  top: 70px; /* Adjust to start below header */
-  bottom: 70px; /* Adjust to leave space for footer */
-  width: 200px; /* Fixed width to match mockup */
-  z-index: 1; /* Ensure it overlaps block 6 */
+  min-height: 100%; /* Ensure it extends to the bottom */
 }
 
 .three {
@@ -88,8 +82,6 @@ nav a {
   background: #cfe2f3;
   border: 2px solid black;
   padding: 10px;
-  position: relative;
-  z-index: 0; /* Ensure it stays below block 2 */
 }
 
 footer {
