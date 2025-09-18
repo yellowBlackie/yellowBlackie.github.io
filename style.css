@@ -17,6 +17,7 @@ body {
   font-size: 10px;
   overflow: hidden;
 }
+
 .x {
   grid-area: x;
   background: #cfe2f3;
@@ -27,13 +28,16 @@ body {
   border: 1px solid black;
   font-size: 12px;
 }
+
 .one {
   grid-area: one;
   background: #cfe2f3;
   border: 1px solid black;
   padding: 2px 5px;
   font-size: 10px;
+  overflow-y: auto;
 }
+
 .two {
   grid-area: two;
   background: #d9ead3;
@@ -42,6 +46,7 @@ body {
   font-size: 10px;
   overflow-y: auto;
 }
+
 .three {
   grid-area: three;
   background: #ffffff;
@@ -50,6 +55,7 @@ body {
   font-size: 10px;
   overflow-y: auto;
 }
+
 .four {
   grid-area: four;
   background: #d9ead3;
@@ -59,10 +65,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .four img {
   max-width: 100%;
   height: auto;
 }
+
 .five {
   grid-area: five;
   background: #fce5cd;
@@ -70,6 +78,7 @@ body {
   padding: 2px 5px;
   font-size: 10px;
 }
+
 .six {
   grid-area: six;
   background: #cfe2f3;
@@ -77,16 +86,14 @@ body {
   display: flex;
   align-items: center;
   padding-left: 10px;
-  position: relative;
   font-size: 10px;
 }
+
 .y {
-  position: absolute;
-  left: 5px;
-  top: 3px;
   background: white;
   padding: 1px 4px;
   border: 1px solid black;
   font-weight: bold;
   font-size: 10px;
+  margin-right: auto; /* Щоб Y був зліва */
 }
