@@ -6,10 +6,9 @@ body {
     "header header header header"
     "two three three four"
     "two three three five"
-    "two six six six"
-    "footer footer footer footer";
+    "two six six six";
   grid-template-columns: 1fr 2fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: auto auto auto 1fr;
   gap: 15px;
   min-height: 100vh;
   background: #f0f0f0;
@@ -31,6 +30,14 @@ body {
   margin: 0;
   color: #003366;
   font-size: 2em;
+}
+
+/* X та Y блоки */
+.header-box, .footer-box {
+  background: white;
+  border: 2px solid black;
+  padding: 5px 15px;
+  font-weight: bold;
 }
 
 /* Меню */
@@ -58,15 +65,12 @@ nav a {
 .three { grid-area: three; background: #ffffff; }
 .four { grid-area: four; background: #ffe599; }
 .five { grid-area: five; background: #fce5cd; }
-.six { grid-area: six; background: #cfe2f3; }
-
-/* Футер */
-footer {
-  grid-area: footer;
-  background: #3d5afe;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  border: 2px solid black;
-  margin-top: auto; /* важливо для "прилипаючого" футера */
+.six  { 
+  grid-area: six; 
+  background: #cfe2f3; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: flex-start; 
+  min-height: 150px; /* щоб футер займав місце */
 }
