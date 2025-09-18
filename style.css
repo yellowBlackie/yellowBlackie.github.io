@@ -8,7 +8,7 @@ body {
     "two three three five"
     "two six six six";
   grid-template-columns: 1fr 3fr 1fr 1fr;
-  grid-template-rows: 100px auto auto 1fr; /* останній ряд = все, що залишилось */
+  grid-template-rows: 100px 100% 100% 1fr; /* останній ряд = все, що залишилось */
   gap: 15px;
   min-height: 100vh;
   background: #f0f0f0;
@@ -80,3 +80,4 @@ nav a {
   align-items: center;
   justify-content: space-between;
 }
+
