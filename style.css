@@ -9,13 +9,14 @@ body {
     "two six six six"
     "footer footer footer footer";
   grid-template-columns: 1fr 2fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
   gap: 15px;
   min-height: 100vh;
   background: #f0f0f0;
   border: 1px solid black;
 }
 
+/* Хедер */
 .combined-header {
   grid-area: header;
   background: #cce0ff;
@@ -32,6 +33,7 @@ body {
   font-size: 2em;
 }
 
+/* Меню */
 nav ul {
   list-style: none;
   padding: 0;
@@ -46,41 +48,19 @@ nav a {
   font-weight: bold;
 }
 
-.two {
-  grid-area: two;
-  background: #d9ead3;
+/* Контентні блоки */
+.two, .three, .four, .five, .six {
   border: 2px solid black;
   padding: 10px;
 }
 
-.three {
-  grid-area: three;
-  background: #ffffff;
-  border: 2px solid black;
-  padding: 10px;
-}
+.two { grid-area: two; background: #d9ead3; }
+.three { grid-area: three; background: #ffffff; }
+.four { grid-area: four; background: #ffe599; }
+.five { grid-area: five; background: #fce5cd; }
+.six { grid-area: six; background: #cfe2f3; }
 
-.four {
-  grid-area: four;
-  background: #ffe599;
-  border: 2px solid black;
-  padding: 10px;
-}
-
-.five {
-  grid-area: five;
-  background: #fce5cd;
-  border: 2px solid black;
-  padding: 10px;
-}
-
-.six {
-  grid-area: six;
-  background: #cfe2f3;
-  border: 2px solid black;
-  padding: 10px;
-}
-
+/* Футер */
 footer {
   grid-area: footer;
   background: #3d5afe;
@@ -88,4 +68,5 @@ footer {
   text-align: center;
   padding: 15px;
   border: 2px solid black;
+  margin-top: auto; /* важливо для "прилипаючого" футера */
 }
