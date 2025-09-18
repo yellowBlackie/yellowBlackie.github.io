@@ -12,7 +12,7 @@ body {
     "two three three five"
     "two six six six";
   grid-template-columns: 1fr 2fr 1fr 1fr;
-  grid-template-rows: 50px 1fr 1fr 50px;
+  grid-template-rows: 1fr 2fr 1fr 1fr;
   gap: 3px;
   min-height: 100vh;
   width: 100%;
