@@ -7,8 +7,8 @@ body {
     "two three three four"
     "two three three five"
     "two six six six";
-  grid-template-columns: 1fr 2fr 1fr 1fr;
-  grid-template-rows: auto auto auto 1fr;
+  grid-template-columns: 1fr 3fr 1fr 1fr;
+  grid-template-rows: 100px auto auto 100px;
   gap: 15px;
   min-height: 100vh;
   background: #f0f0f0;
@@ -24,12 +24,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.site-title {
-  margin: 0;
-  color: #003366;
-  font-size: 2em;
 }
 
 /* X та Y блоки */
@@ -64,20 +58,25 @@ nav a {
 /* Контентні блоки */
 .two, .three, .four, .five, .six {
   border: 2px solid black;
-  padding: 10px;
+  padding: 20px;
 }
 
 .two { grid-area: two; background: #d9ead3; }
 .three { grid-area: three; background: #ffffff; }
 .four { grid-area: four; background: #ffe599; }
 .five { grid-area: five; background: #fce5cd; }
-
 .six {
   grid-area: six;
   background: #cfe2f3;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; /* Y зверху, текст знизу */
-  min-height: 200px; /* футер займає місце */
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.site-title {
+  margin: 0;
+  color: #003366;
+  font-size: 2em;
 }
