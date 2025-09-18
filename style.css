@@ -9,11 +9,12 @@ body {
     "two three three five"
     "two six six six";
   grid-template-columns: 1fr 2fr 1fr 1fr;
-  grid-template-rows: 50px 50px 2fr 1fr 50px;
-  gap: 0;
+  grid-template-rows: 40px 40px 1.5fr 1fr 40px;
+  gap: 5px;
   height: 100vh;
   width: 100vw;
-  min-width: 500px;
+  min-width: 400px;
+  font-size: 14px;
 }
 .x {
   grid-area: x;
@@ -21,33 +22,33 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-left: 15px;
-  border: 2px solid black;
+  padding-left: 10px;
+  border: 1.5px solid black;
 }
 .one {
   grid-area: one;
   background: #cfe2f3;
-  border: 2px solid black;
-  padding: 10px;
+  border: 1.5px solid black;
+  padding: 8px;
 }
 .two {
   grid-area: two;
   background: #d9ead3;
-  border: 2px solid black;
-  padding: 10px;
+  border: 1.5px solid black;
+  padding: 8px;
 }
 .three {
   grid-area: three;
   background: #ffffff;
-  border: 2px solid black;
-  padding: 10px;
+  border: 1.5px solid black;
+  padding: 8px;
   overflow-y: auto;
 }
 .four {
   grid-area: four;
   background: #d9ead3;
-  border: 2px solid black;
-  padding: 10px;
+  border: 1.5px solid black;
+  padding: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,37 +60,25 @@ body {
 .five {
   grid-area: five;
   background: #fce5cd;
-  border: 2px solid black;
-  padding: 10px;
+  border: 1.5px solid black;
+  padding: 8px;
 }
 .six {
   grid-area: six;
   background: #cfe2f3;
-  border: 2px solid black;
+  border: 1.5px solid black;
   display: flex;
   align-items: center;
-  padding-left: 50px;
+  padding-left: 30px;
   position: relative;
 }
 .y {
   position: absolute;
-  left: 15px;
-  top: 10px;
+  left: 10px;
+  top: 6px;
   background: white;
-  padding: 4px 10px;
-  border: 2px solid black;
+  padding: 3px 8px;
+  border: 1.5px solid black;
   font-weight: bold;
-}
-/* Меню якщо потрібно буде додати */
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 15px;
-}
-nav a {
-  text-decoration: none;
-  color: #003366;
-  font-weight: bold;
+  font-size: 14px;
 }
