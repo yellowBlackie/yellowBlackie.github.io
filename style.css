@@ -10,9 +10,9 @@ body {
     "header header header header"
     "two three three four"
     "two three three five"
-    "six six six six";
+    ". six six six";
   grid-template-columns: 1fr 2fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 120px 1fr 1fr 120px;
   gap: 3px;
   min-height: 100vh;
   width: 100%;
@@ -34,6 +34,7 @@ body {
 
 .two {
   grid-area: two;
+  grid-row: 2 / 5; /* Розширюємо блок 2 на рядок 4, щоб він заходив під футер */
   background: #d9ead3;
   border: 1px solid black;
   padding: 2px 5px;
@@ -81,6 +82,7 @@ body {
 
 .six {
   grid-area: six;
+  grid-column: 2 / 5; /* Футер займає тільки стовпці 2-4, щоб блок 2 заходив під нього ліворуч */
   background: #cfe2f3;
   border: 1px solid black;
   display: flex;
@@ -108,3 +110,9 @@ body {
   margin-right: 5px;
   flex-shrink: 0;
 }
+
+h1, h2, h3 { font-size: 1.2em; margin-bottom: 3px; }
+p { margin-bottom: 3px; }
+ul, ol { padding-left: 15px; margin: 5px 0; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid black; padding: 2px; text-align: left; }
