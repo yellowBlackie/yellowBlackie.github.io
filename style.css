@@ -86,16 +86,28 @@ body {
   background: #cfe2f3;
   border: 1px solid black;
   display: flex;
-  align-items: flex-start; /* Вирівнювання по верхньому краю */
-  justify-content: flex-start; /* Вирівнювання по лівому краю */
   padding: 0; /* Прибираємо усі відступи */
   font-size: 10px;
+  position: relative; /* Додаємо для абсолютного позиціонування .y */
+  min-height: 120px; /* Зберігаємо мінімальну висоту */
 }
 
-.six .y,
+.six .y {
+  background: white;
+  padding: 2px 6px;
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 5px;
+  flex-shrink: 0;
+  position: absolute; /* Фіксуємо позицію */
+  top: 0; /* Притискаємо до верху */
+  left: 0; /* Притискаємо до лівого краю */
+}
+
 .six h1 {
-  margin: 0; /* Прибираємо внутрішні відступи */
-  padding: 2px 5px; /* Додаємо мінімальні відступи всередині елементів */
+  margin: 0; /* Прибираємо відступи */
+  padding: 2px 5px; /* Додаємо мінімальні відступи */
 }
 
 .x {
@@ -123,5 +135,6 @@ p { margin-bottom: 3px; }
 ul, ol { padding-left: 15px; margin: 5px 0; }
 table { border-collapse: collapse; width: 100%; }
 th, td { border: 1px solid black; padding: 2px; text-align: left; }
+
 
 
