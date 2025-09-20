@@ -82,11 +82,12 @@ body {
 
 .six {
   grid-area: six;
-  grid-column: 2 / 5; /* Футер займає тільки стовпці 2-4, щоб блок 2 заходив під нього ліворуч */
+  grid-column: 2 / 5;
   background: #cfe2f3;
   border: 1px solid black;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start; /* Додано для вирівнювання ліворуч */
   padding: 2px 5px;
   font-size: 10px;
 }
@@ -116,3 +117,4 @@ p { margin-bottom: 3px; }
 ul, ol { padding-left: 15px; margin: 5px 0; }
 table { border-collapse: collapse; width: 100%; }
 th, td { border: 1px solid black; padding: 2px; text-align: left; }
+
