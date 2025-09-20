@@ -86,10 +86,16 @@ body {
   background: #cfe2f3;
   border: 1px solid black;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start; /* Додано для вирівнювання ліворуч */
-  padding: 2px 5px;
+  align-items: flex-start; /* Вирівнювання по верхньому краю */
+  justify-content: flex-start; /* Вирівнювання по лівому краю */
+  padding: 0; /* Прибираємо усі відступи */
   font-size: 10px;
+}
+
+.six .y,
+.six h1 {
+  margin: 0; /* Прибираємо внутрішні відступи */
+  padding: 2px 5px; /* Додаємо мінімальні відступи всередині елементів */
 }
 
 .x {
@@ -117,4 +123,5 @@ p { margin-bottom: 3px; }
 ul, ol { padding-left: 15px; margin: 5px 0; }
 table { border-collapse: collapse; width: 100%; }
 th, td { border: 1px solid black; padding: 2px; text-align: left; }
+
 
