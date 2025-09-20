@@ -3,75 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <title>FAQ</title>
+  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
     .four {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px;
+      padding: 10px;
       background: #eaf4ea;
     }
 
     .four img {
       max-width: 100%;
       height: auto;
-      border: 2px solid #333;
+      border: 1px solid #333;
+    }
+
+    /* Тільки щоб було видно, де клікабельна зона */
+    area {
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <h1>FAQ</h1>
+  <header class="header">
+    <div class="x">Геть з Василькова</div>
+    <h1>Міністерство освіти і науки України</h1>   
+  </header>
+
+  <div class="two">
+    <h3>Звіт</h3>
+    <p>з комп'ютерного практикуму №1</p>
+    <p>з дисципліни «Програмування веб-застосувань»</p>
+    <p>«Розробка HTML-структур та візуалізація за допомогою CSS»</p>
+    <p>Варіант 2</p>
+    <ul>
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="about.html">Про нас</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Контакти</a></li>
+    </ul>
+  </div>
+
+  <div class="three">
+    <h2>FAQ</h2>
+    <h3>Що таке HTML?</h3>
+    <p>Мова розмітки для веб-сторінок.</p>
+    <h3>Що таке CSS?</h3>
+    <p>Мова стилів для візуалізації.</p>
+  </div>
 
   <div class="four">
-    <img src="dog.jpg" alt="Собака" usemap="#image-map" id="dog-img">
+    <img src="dog.jpg" alt="Моя фотографія" usemap="#dog-map">
 
-    <map name="image-map">
-      <!-- Прямокутник -->
-      <area alt="Прямокутник" title="Прямокутник"
-            href="https://example.com/rect"
-            coords="0,0,300,200" shape="rect">
+    <map name="dog-map">
+      <!-- Прямокутник по мордочці -->
+      <area alt="Собака" title="Собака" 
+            href="https://uk.wikipedia.org/wiki/Собака" 
+            coords="50,40,200,180" shape="rect">
 
-      <!-- Коло -->
-      <area alt="Коло" title="Коло"
-            href="https://example.com/circle"
-            coords="400,150,70" shape="circle">
+      <!-- Коло на вухо -->
+      <area alt="Вухо" title="Вухо" 
+            href="https://example.com/ear" 
+            coords="120,60,40" shape="circle">
 
-      <!-- Багатокутник -->
-      <area alt="Багатокутник" title="Багатокутник"
-            href="https://example.com/poly"
-            coords="250,250,300,300,350,250,300,200" shape="poly">
+      <!-- Трикутник (іграшка справа) -->
+      <area alt="Іграшка" title="Іграшка" 
+            href="https://example.com/toy" 
+            coords="220,180,280,220,180,220" shape="poly">
     </map>
   </div>
 
-  <script>
-    // Робимо карту адаптивною
-    function resizeMap() {
-      const img = document.getElementById('dog-img');
-      const areas = img.useMap ? document.querySelectorAll('map[name="' + img.useMap.slice(1) + '"] area') : [];
+  <div class="five">
+    <ul>
+      <li>Питання 1</li>
+      <li>Питання 2</li>
+    </ul>
+  </div>
 
-      const w = img.naturalWidth;
-      const h = img.naturalHeight;
-      const wPercent = img.offsetWidth / w;
-      const hPercent = img.offsetHeight / h;
-
-      areas.forEach(area => {
-        const coords = area.dataset.coords ? area.dataset.coords.split(',') : area.coords.split(',');
-        if (!area.dataset.coords) {
-          area.dataset.coords = coords.join(',');
-        }
-        const newCoords = coords.map((c, i) => i % 2 === 0 ? Math.round(c * wPercent) : Math.round(c * hPercent));
-        area.coords = newCoords.join(',');
-      });
-    }
-
-    window.addEventListener('load', resizeMap);
-    window.addEventListener('resize', resizeMap);
-  </script>
+  <div class="six">
+    <div class="y">Голова безтолкова</div>
+  </div>
 </body>
 </html>
