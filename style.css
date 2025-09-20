@@ -34,7 +34,7 @@ body {
 
 .two {
   grid-area: two;
-  grid-row: 2 / 5; /* Розширюємо блок 2 на рядок 4, щоб він заходив під футер */
+  grid-row: 2 / 5;
   background: #d9ead3;
   border: 1px solid black;
   padding: 2px 5px;
@@ -85,11 +85,10 @@ body {
   grid-column: 2 / 5;
   background: #cfe2f3;
   border: 1px solid black;
-  display: flex;
-  padding: 0; /* Прибираємо усі відступи */
+  padding: 0;
   font-size: 10px;
-  position: relative; /* Додаємо для абсолютного позиціонування .y */
-  min-height: 120px; /* Зберігаємо мінімальну висоту */
+  position: relative;
+  min-height: 120px;
 }
 
 .six .y {
@@ -98,16 +97,16 @@ body {
   border: 1px solid black;
   font-weight: bold;
   font-size: 20px;
-  margin-right: 5px;
-  flex-shrink: 0;
-  position: absolute; /* Фіксуємо позицію */
-  top: 0; /* Притискаємо до верху */
-  left: 0; /* Притискаємо до лівого краю */
+  margin: 0; /* Прибираємо margin, щоб уникнути зсуву */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Додаємо z-index, щоб перекривати інші елементи */
 }
 
 .six h1 {
-  margin: 0; /* Прибираємо відступи */
-  padding: 2px 5px; /* Додаємо мінімальні відступи */
+  margin: 0;
+  padding: 2px 5px;
 }
 
 .x {
@@ -120,21 +119,9 @@ body {
   flex-shrink: 0;
 }
 
-.y {
-  background: white;
-  padding: 2px 6px;
-  border: 1px solid black;
-  font-weight: bold;
-  font-size: 20px;
-  margin-right: 5px;
-  flex-shrink: 0;
-}
-
+/* Видаляємо дублювання .y, щоб уникнути конфлікту */
 h1, h2, h3 { font-size: 1.2em; margin-bottom: 3px; }
 p { margin-bottom: 3px; }
 ul, ol { padding-left: 15px; margin: 5px 0; }
 table { border-collapse: collapse; width: 100%; }
 th, td { border: 1px solid black; padding: 2px; text-align: left; }
-
-
-
